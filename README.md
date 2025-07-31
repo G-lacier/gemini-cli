@@ -91,6 +91,19 @@ The Vertex AI API provides a [free tier](https://cloud.google.com/vertex-ai/gene
 
 3. (Optionally) Add a billing account on your project to get access to [higher usage limits](https://cloud.google.com/vertex-ai/generative-ai/docs/quotas)
 
+### Use an OpenAI API key:
+
+You can also run the CLI using OpenAI's ChatGPT models.
+
+1. Obtain an API key from [OpenAI](https://platform.openai.com/account/api-keys).
+2. Set it as an environment variable in your terminal. Replace `YOUR_API_KEY` with your generated key.
+
+   ```bash
+   export OPENAI_API_KEY="YOUR_API_KEY"
+   ```
+
+3. Select an OpenAI model, for example `gpt-3.5-turbo`, using the `--model` flag or the `model` configuration value.
+
 For other authentication methods, including Google Workspace accounts, see the [authentication](./docs/cli/authentication.md) guide.
 
 ## Examples
